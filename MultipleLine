@@ -5,6 +5,7 @@ FROM library/alpine:latest
 # sudo docker container run  --entrypoint /usr/bin/which --rm library/alpine:latest python does not exist
 # sudo docker container run  --entrypoint /usr/bin/which --rm library/alpine:latest echo exist
 # sudo docker container exec alpine-shell /sbin/apk add curl
-RUN apk add curl && apk add php run multiple packages
+# run multiple packages
+RUN apk add curl && apk add php 
 # RUN apk add curl
 # RUN apk add php   
